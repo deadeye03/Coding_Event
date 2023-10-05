@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@500&display=swap');
+/* font-family: 'Lora', serif; */
+*{
+    margin: 0;
+
+    padding: 0;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-container ul{
+    display: flex;
+    list-style: none;
+
+}
+.link{
+    text-decoration: none;
+    margin: 0 23px;
+    color: grey;
+}
+.search-container{
+    display: flex;
+}
+
+.search-box{
+    padding: 16px;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+  
+}
+.search-btn{
+ border-radius: 10px;
+ margin: 0 6px;
+ padding: 16px;
+ color: green;
+ background-color: white;
+}
+.search-btn:hover{
+    background-color: green;
+    color: white;
+}
+.box{
+    display: flex;
+    justify-content: center;
+   
+    flex-wrap: wrap;
+    
+}
+.content{
+    height: 65vh;
+    width: 25vw;
+    border: 0.2px solid rgb(47, 48, 48);
+    margin: 5px 5px;
+    border-radius: 4px;
+    
+}
+.card-title{
+    font-family: 'Lora', serif;
+    text-align: center;
+    font-size: 16px;
+}
+.status{
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: rebeccapurple;
+    line-height: 2.5;
+}
+.img-fit{
+    height: 150px;
+    width: 320px;
+}
+.content-text{
+    font-family: 'Lora', serif;
+}
+.red{
+    color: red;
+}
+button{
+    padding: 16px;
+    margin: 5px 80px;
+    background-color: blue;
+    border-radius: 10px;
+}
+button a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Lora', serif;
+    color: white;
+}
+button:hover{
+    background-color: #882121;
+    transform: scale(1.1);
+    
+}
+@media only screen and (max-width:600px){
+    body{
+        background-color: rgb(253, 253, 253);
+        /* background: url('bgc.png') no-repeat fixed right top;
+        background-size: cover; */
+    }
+    .nav-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .link{
+        margin: 0px 21px;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .content{
+        height: 60vh;
+        width: 80vw;
+        margin: 5px 34px;
+    }
+    .img-fit{
+        width: 288px;
+    }
+    button{
+        margin: 15px 90px;
+    }
+}
